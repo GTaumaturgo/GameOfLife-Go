@@ -1,10 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type board [][]cell
 
-const boardSize = 14
+const boardSize = 50
+const cellSize = 750 / boardSize
 
 func newBoard() board {
 	b := board(make([][]cell, boardSize))
